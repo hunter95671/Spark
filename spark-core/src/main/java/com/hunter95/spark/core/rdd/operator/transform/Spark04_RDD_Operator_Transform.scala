@@ -13,7 +13,7 @@ object Spark04_RDD_Operator_Transform {
     //算子 - flatMap
     val rdd = sc.makeRDD(List(List(1, 2), List(3, 4)), 2)
 
-    //flatmap 是先map再flatten
+    //flatmap 是先flatten再map
     //flat需要传入list对象,后一个list是map阶段映射后需要再传给flat的内容
     val flatRDD: RDD[Int] = rdd.flatMap(
       list => {
