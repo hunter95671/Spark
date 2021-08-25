@@ -6,7 +6,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.collection.mutable
 
-object Spark04Req1_HotCategoryTop10Analysis3 {
+object Spark04_Req1_HotCategoryTop10Analysis3 {
   def main(args: Array[String]): Unit = {
 
     //Top10热门品类
