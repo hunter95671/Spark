@@ -19,9 +19,9 @@ object SparkStreaming02_Queue {
 
     val rddQueue = new mutable.Queue[RDD[Int]]()
 
-    val inputStream = ssc.queueStream(rddQueue,oneAtATime = false)
+    val inputStream = ssc.queueStream(rddQueue, oneAtATime = false)
 
-    val mappedStream = inputStream.map((_,1))
+    val mappedStream = inputStream.map((_, 1))
     val reducedStream = mappedStream.reduceByKey(_ + _)
 
     reducedStream.print()

@@ -14,7 +14,7 @@ object Spark21_RDD_Operator_Transform {
     //join
 
     val rdd1 = sc.makeRDD(List(("a", 1), ("b", 2), ("c", 3)))
-    val rdd2 = sc.makeRDD(List(("a", 4), ("b", 5), ("c", 6)))
+    val rdd2 = sc.makeRDD(List(("a", 4), ("a", 5), ("c", 6)))
 
     //join：两个不同数据源的数据，相同Key的Value会连接在一起，形成二元组
     //如果两个数据源中Key没有匹配上，那么数据不会出现在结果中

@@ -52,7 +52,7 @@ object SparkStreaming03_DIY {
     }
 
     override def onStop(): Unit = {
-      flg=false
+      flg = false
     }
   }
 }
