@@ -9,7 +9,6 @@ object Spark23_RDD_Operator_Transform {
 
     val sparkConf = new SparkConf().setMaster("local[*]").setAppName("Operator")
     val sc = new SparkContext(sparkConf)
-
     //算子 - Key - Value类型算子
     // cogroup ：connect + group
     //分组+连接
